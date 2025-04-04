@@ -1,0 +1,24 @@
+<div class="invest-container">
+  <main>
+    <h2>invests</h2>
+    <div class="input-container">
+      <input
+        type="text"
+        placeholder="looking to invest?"
+        [(ngModel)]="searchCoin"
+      />
+    </div>
+    <div class="listOfCrypto" *ngFor="let el of inputValue">
+      <div class="crypto">
+        <h3>{{ el.name }}</h3>
+        <p>{{ el.symbol }}</p>
+        <p>{{ el.market_cap_rank }}</p>
+        <button title="click to buy coin" (click)="investBtn(el.name)">
+          <img [src]="el.thumb" />
+        </button>
+      </div>
+    </div>
+  </main>
+</div>
+
+<router-outlet></router-outlet>

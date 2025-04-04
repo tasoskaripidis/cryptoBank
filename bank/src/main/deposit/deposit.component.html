@@ -1,0 +1,63 @@
+<div class="cards-container">
+  <button (click)="closeBtn()" class="closeBtn">
+    <i class="fa-solid fa-circle-xmark"></i>
+  </button>
+  <main>
+    <div class="money-input">
+      <h2>deposit money:</h2>
+      <input type="number" maxlength="10" [(ngModel)]="sendMoney" />
+    </div>
+    <div>
+      <div>
+        <ul class="pay-list">
+          <li>
+            <label>name</label>
+            <input
+              type="text"
+              placeholder="username"
+              name="username"
+              maxlength="20"
+              required
+              [(ngModel)]="theCard.name"
+            />
+          </li>
+          <li>
+            <label>card numbeer</label>
+            <input
+              type="password"
+              placeholder="password"
+              name="password"
+              maxlength="20"
+              required
+              [(ngModel)]="theCard.number"
+            />
+          </li>
+          <li>
+            <label>expire date</label>
+            <input
+              type="date"
+              placeholder="date"
+              name="date"
+              maxlength="20"
+              required
+              [(ngModel)]="theCard.date"
+            />
+          </li>
+          <li>
+            <label>cvv</label>
+            <input
+              type="password"
+              placeholder="password"
+              name="password"
+              maxlength="3"
+              minlength="3"
+              required
+              [(ngModel)]="theCard.cvv"
+            />
+          </li>
+          <button (click)="addBtn()" class="addbtn">add</button>
+        </ul>
+      </div>
+    </div>
+  </main>
+</div>

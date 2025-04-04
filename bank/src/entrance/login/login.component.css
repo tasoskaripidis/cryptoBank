@@ -1,0 +1,102 @@
+main {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(213, 240, 255);
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.log-in {
+  border: 2px solid blue;
+  border-radius: 20px;
+  width: 350px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.logo {
+  font-size: 4rem;
+  margin-top: 1rem;
+  color: blue;
+}
+
+.input-container {
+  position: relative;
+  height: 100px;
+  width: 260px;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.input-logo {
+  position: absolute;
+  top: 60px;
+  left: 40px;
+  color: rgb(119, 119, 119);
+  font-size: 1.4rem;
+}
+
+input {
+  width: 240px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(227, 227, 227);
+  text-align: center;
+}
+input::placeholder {
+  text-align: center;
+}
+
+.inputs label {
+  color: black;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.logBtn {
+  color: white;
+  padding: 0.5rem;
+  background-color: blue;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.log-in a {
+  color: blue;
+}
+
+@media (max-width: 400px) {
+  .log-in {
+    width: 80%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  .logBtn {
+    font-size: 1rem;
+  }
+
+  a {
+    font-size: 0.9rem;
+  }
+}

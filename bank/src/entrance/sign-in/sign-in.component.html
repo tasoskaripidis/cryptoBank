@@ -1,0 +1,35 @@
+<main>
+  <section class="log-in">
+    <div class="logo">
+      <i class="fa-solid fa-building-columns"></i>
+    </div>
+    <form class="inputs">
+      <div class="input-container">
+        <label>username</label>
+        <div class="input-logo">
+          <i class="fa-solid fa-circle-user"></i>
+        </div>
+
+        <input
+          type="text"
+          placeholder="username.."
+          name="username"
+          [(ngModel)]="profileUser.userId"
+          maxlength="15"
+        />
+      </div>
+      <div class="input-container">
+        <label>password</label>
+        <div class="input-logo"><i class="fa-solid fa-lock"></i></div>
+        <input
+          type="password"
+          placeholder="password.."
+          name="password"
+          [(ngModel)]="profileUser.userPass"
+          maxlength="15"
+        />
+      </div>
+    </form>
+    <button (click)="signBtn()" class="logBtn">sign-in</button>
+  </section>
+</main>

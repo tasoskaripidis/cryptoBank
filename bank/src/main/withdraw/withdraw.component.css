@@ -1,5 +1,5 @@
 .cards-container {
-  width: 810px;
+  max-width: 810px;
   height: 510px;
   position: absolute;
   top: 155px;

@@ -97,28 +97,6 @@ main {
   height: 10px;
 }
 
-@media screen and (max-width: 450px) {
-  .cards-container {
-    left: 0;
-    height: 620px;
-    right: 0;
-    top: 0;
-    width: auto;
-  }
-
-  main {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 2rem;
-    place-items: center;
-  }
-
-  .money-input input {
-    width: auto;
-    margin-bottom: 1rem;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .cards-container {
     left: 0;

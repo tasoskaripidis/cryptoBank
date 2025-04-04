@@ -96,7 +96,8 @@ main {
   width: 10px;
   height: 10px;
 }
-@media screen and (min-width: 448px) {
+
+@media screen and (min-width: 768px) {
   .cards-container {
     left: 0;
     height: 620px;
@@ -118,7 +119,7 @@ main {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 448px) {
   .cards-container {
     left: 0;
     height: 620px;

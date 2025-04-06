@@ -1,0 +1,45 @@
+<div class="history-container">
+  <h2>transactions history</h2>
+  <div class="moneyMoves">
+    <ul>
+      <li class="list">
+
+          @for ( item of sendMoneyArray; track $index ) {
+          <li class="child-list">
+            <span>{{date | date:'short' }}</span><p class="add">you add in your account <span>{{ item }}</span>  dollars</p>
+          </li>
+          }
+       
+      </li>
+      <li class="list">
+       
+          @for ( item of removeMoneyArray; track $index ) {
+          <li class="child-list">
+           <span>{{date | date:'short' }}</span> <p class="remove">you removed from your acount <span>{{ item }}</span>  dollars</p>
+          </li>
+          }
+        
+      </li>
+      <li class="list">
+   
+          @for ( item of buyCoin; track $index ) {
+          <li class="child-list">
+           <span>{{date | date:'short' }}</span> <p class="add">you bought <span>{{ item }}</span> </p>
+          </li>
+          }
+      
+      </li>
+      <li class="list">
+   
+          @for ( item of sellCoin; track $index ) {
+          <li class="child-list">
+            <span>{{date | date:'short' }}</span><p class="remove">you sell <span>{{ item }}</span></p>
+          </li>
+          }
+    
+      </li>
+    </ul>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

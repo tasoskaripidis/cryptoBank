@@ -1,0 +1,149 @@
+.cards-container {
+  width: 810px;
+  height: 510px;
+  position: absolute;
+  top: 155px;
+  left: 285px;
+  border-radius: 25px;
+  border: 2px solid rgb(9, 9, 130);
+  background-color: white;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 400px;
+  width: auto;
+}
+
+.closeBtn {
+  font-size: 2rem;
+  color: black;
+  background-color: white;
+  border: none;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.money-input {
+  display: grid;
+  row-gap: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 200px;
+  place-items: center;
+}
+
+.money-input h2 {
+  color: rgb(9, 9, 130);
+  text-transform: capitalize;
+  font-style: oblique;
+}
+
+.money-input input {
+  width: 70px;
+}
+
+.pay-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 0.4rem;
+  place-items: center;
+  margin-right: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 300px;
+  height: 350px;
+  border-radius: 1rem;
+}
+
+.pay-list label {
+  display: block;
+}
+
+.pay-list input {
+  padding: 0.5rem;
+}
+.pay-list li {
+  list-style-type: none;
+}
+
+.addbtn {
+  text-align: center;
+  border: none;
+  background-color: blue;
+  width: 100px;
+  height: 40px;
+  border-radius: 1rem;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.price {
+  text-align: center;
+  color: red;
+  font-size: 1.2rem;
+}
+
+.paymentclose {
+  display: none;
+}
+
+.closebtn {
+  margin: 1rem 0rem 0rem 1rem;
+  cursor: pointer;
+  color: red;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  width: 10px;
+  height: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .cards-container {
+    left: 0;
+    height: 620px;
+    right: 0;
+    top: 0;
+    width: auto;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    place-items: center;
+  }
+
+  .money-input input {
+    width: auto;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .cards-container {
+    left: 10px;
+    height: 620px;
+    right: 0;
+    top: 0;
+    width: auto;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    place-items: center;
+  }
+
+  .money-input input {
+    width: auto;
+    margin-bottom: 1rem;
+  }
+}

@@ -5,7 +5,7 @@
   <main>
     <div class="money-input">
       <h2>deposit money:</h2>
-      <input type="number" maxlength="10" [(ngModel)]="sendMoney" />
+      <input type="number" [(ngModel)]="sendMoney" />
     </div>
     <div>
       <div>
@@ -27,7 +27,7 @@
               type="password"
               placeholder="password"
               name="password"
-              maxlength="20"
+              maxlength="16"
               required
               [(ngModel)]="theCard.number"
             />
@@ -38,7 +38,7 @@
               type="date"
               placeholder="date"
               name="date"
-              maxlength="20"
+              maxlength="10"
               required
               [(ngModel)]="theCard.date"
             />

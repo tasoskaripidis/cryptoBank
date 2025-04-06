@@ -1,11 +1,11 @@
 .cards-container {
-  max-width: 810px;
+  width: 810px;
   height: 510px;
   position: absolute;
   top: 155px;
   left: 285px;
   border-radius: 25px;
-  border: 1px solid rgb(9, 9, 130);
+  border: 2px solid rgb(9, 9, 130);
   background-color: white;
 }
 
@@ -30,12 +30,18 @@ main {
 .money-input {
   display: grid;
   row-gap: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 200px;
+  place-items: center;
 }
 
 .money-input h2 {
   color: rgb(9, 9, 130);
   text-transform: capitalize;
   font-style: oblique;
+}
+.money-input input {
+  width: 70px;
 }
 
 .pay-list {
@@ -44,7 +50,7 @@ main {
   row-gap: 0.4rem;
   place-items: center;
   margin-right: 1rem;
-  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   width: 300px;
   height: 350px;
   border-radius: 1rem;
@@ -97,7 +103,7 @@ main {
   height: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1024px) {
   .cards-container {
     left: 0;
     height: 620px;
@@ -119,14 +125,13 @@ main {
   }
 }
 
-@media screen and (min-width: 448px) {
+@media screen and (max-width: 448px) {
   .cards-container {
     left: 0;
     height: 620px;
     right: 0;
     top: 0;
     width: auto;
-    margin-top: 6rem;
   }
 
   main {

@@ -98,5 +98,6 @@ input::placeholder {
 
   a {
     font-size: 0.9rem;
+    padding-top: 1rem;
   }
 }
